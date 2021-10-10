@@ -1,0 +1,17 @@
+string reverseWord(string str){
+    
+  //Your code here
+        int n,i;
+        char c;
+        n=str.length();
+        
+        for(int i=0;i<n/2;i++)
+        {
+            c=str[i];
+            str[i]=str[n-1-i];
+            str[n-1-i]=c;
+        }
+         
+         
+        return str;
+}
